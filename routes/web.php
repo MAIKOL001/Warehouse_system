@@ -21,6 +21,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/receiving',[App\Http\Controllers\ReceivingController:: class,'form'])->name('receiving');
+Route::get('/stocklist',[App\Http\Controllers\ReceivingController:: class,'list'])->name('stocklist');
 Route::get('/productlist',[App\Http\Controllers\ProductlistController:: class,'list'])->name('productlist');
 Route::get('/merchantlist',[App\Http\Controllers\merchantlistController:: class,'list'])->name('merchantlist');
 Route::get('/binlist',[App\Http\Controllers\binlistController:: class,'list'])->name('binlist');

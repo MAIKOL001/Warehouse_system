@@ -29,13 +29,13 @@
                         field: "TotalSales",
                         aggregate: "sum"
                     }],
-                    group: {
-                        field: "Category.CategoryName",
-                        dir: "desc",
-                        aggregates: [
-                            { field: "TotalSales", aggregate: "sum" }
-                        ]
-                    },
+                    // group: {
+                    //     field: "Category.CategoryName",
+                    //     dir: "desc",
+                    //     aggregates: [
+                    //         { field: "TotalSales", aggregate: "sum" }
+                    //     ]
+                    // },
                     schema: {
                         model: {
                             id: "ProductID",
@@ -81,65 +81,45 @@
                 dataBound: onDataBound,
                 toolbar: ["excel", "pdf","search","create"],
                 columns: [{
-                    selectable: true,
-                    width: 75,
-                    attributes: {
-                        "class": "checkbox-align",
-                    },
-                    headerAttributes: {
-                        "class": "checkbox-align",
-                    }
-                }, {
-                    field: "ProductName",
-                    title: "Product Name",
-                    template: "<div class='product-photo' style='background-image: url(../content/web/foods/#:data.ProductID#.jpg);'></div><div class='product-name'>#:ProductName#</div>",
-                    width: 300
-                }, {
-                    field: "UnitPrice",
-                    title: "Price",
-                    format: "{0:c}",
+                    field: "Merchant Name",
+                    title: "Merchant Name",
+                    // format: "{0:c}",
                     width: 105
                 }, {
-                    field: "Discontinued",
-                    title: "In Stock",
-                    template: "<span id='badge_#=ProductID#' class='badgeTemplate'></span>",
+                    field: "Product Name",
+                    title: "Product Name",
+                    // template: "<span id='badge_#=ProductID#' class='badgeTemplate'></span>",
                     width: 130,
                 }, {
-                    field: "Category.CategoryName",
-                    title: "Category",
+                    field: "Quantity",
+                    title: "Quantity",
                     editor: clientCategoryEditor,
-                    groupHeaderTemplate: "<div class='group-header'><span class='category-name'>Category:#=data.value#,TotalSales:#=kendo.format('{0:c}', aggregates.TotalSales.sum)#</span></div>",
+                    // groupHeaderTemplate: "<div class='group-header'><span class='category-name'>Category:#=data.value#,TotalSales:#=kendo.format('{0:c}', aggregates.TotalSales.sum)#</span></div>",
                     width: 125
                 }, {
-                    field: "CustomerRating",
-                    title: "Rating",
-                    template: "<input id='rating_#=ProductID#' data-bind='value: CustomerRating' class='rating'/>",
+                    field: "Passed quality check",
+                    title: "Passed quality check",
+                    // template: "<input id='rating_#=ProductID#' data-bind='value: CustomerRating' class='rating'/>",
                     editable: returnFalse,
                     width: 140
                 }, {
-                    field: "Country.CountryNameLong",
-                    title: "Country",
-                    template: "<div class='k-text-center'><img src='../content/web/country-flags/#:data.Country.CountryNameShort#.png' alt='Kendo UI for jQuery Grid #: data.Country.CountryNameLong# Flag' title='#: data.Country.CountryNameLong#' width='30' /></div>",
+                    field: "Failed quality check",
+                    title: "Failed quality check",
+                    // template: "<div class='k-text-center'><img src='../content/web/country-flags/#:data.Country.CountryNameShort#.png' alt='Kendo UI for jQuery Grid #: data.Country.CountryNameLong# Flag' title='#: data.Country.CountryNameLong#' width='30' /></div>",
                     editor: clientCountryEditor,
                     width: 120
                 }, {
-                    field: "UnitsInStock",
-                    title: "Units",
+                    field: "Location",
+                    title: "Location",
                     width: 105
                 }, {
-                    field: "TotalSales",
-                    title: "TotalSales",
-                    format: "{0:c}",
+                    field: "Items Pending",
+                    title: "Items Pending",
+                    // format: "{0:c}",
                     width: 140,
                     aggregates: ["sum"],
-                }, {
-                    field: "TargetSales",
-                    title: "Target Sales",
-                    format: "{0:c}",
-                    template: "<span id='chart_#= ProductID#' class='sparkline-chart'></span>",
-                    width: 220
                 },
-                { command: "destroy", title: "&nbsp;", width: 120 }],
+                ],
             });
         });
 

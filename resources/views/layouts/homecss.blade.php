@@ -65,6 +65,7 @@ body {
 	background-color: #1a405b;
 	font-family: var(--lato);
 	transition: .3s ease;
+    font-size: 32px;
 	overflow-x: hidden;
 	scrollbar-width: none;
 }
@@ -75,21 +76,10 @@ body {
 	width: 60px;
 }
 
-/* .dropdown-menu
-{
 
-    border-radius:7px;
-    color:whitesmoke;
-    padding-top:1rem;
-}
-
- .dropdown .dropdown-menu ul li
-{
-    background-color: whitesmoke;
-} */
 
 #sidebar .brand {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 700;
 	height: 56px;
 	display: flex;
@@ -115,38 +105,12 @@ body {
 	margin-top: 48px;
 }
 #sidebar .side-menu li {
-	height: 48px;
+
 	background: transparent;
-	margin-left: 6px;
-	border-radius: 48px 0 0 48px;
-	padding: 4px;
+	border-radius: 8px;
+	padding: 16px;
 }
-#sidebar .side-menu li.active {
-	background: var(--grey);
-	position: relative;
-}
-#sidebar .side-menu li.active::before {
-	content: '';
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	top: -40px;
-	right: 0;
-	box-shadow: 20px 20px 0 var(--grey);
-	z-index: -1;
-}
-#sidebar .side-menu li.active::after {
-	content: '';
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	bottom: -40px;
-	right: 0;
-	box-shadow: 20px -20px 0 var(--grey);
-	z-index: -1;
-}
+
 #sidebar .side-menu li a {
 	width: 100%;
 	height: 100%;
@@ -163,16 +127,7 @@ body {
 #sidebar .side-menu.top li.active a {
 	color: var(--blue);
 }
-#sidebar.hide .side-menu li a {
-	width: calc(48px - (4px * 2));
-	transition: width .3s ease;
-}
-#sidebar .side-menu li a.logout {
-	color: white;
-}
-#sidebar .side-menu.top li a:hover {
-	color: var(--blue);
-}
+
 #sidebar .side-menu li a .bx {
 	min-width: calc(60px  - ((4px + 6px) * 2));
 	display: flex;
@@ -249,7 +204,7 @@ body {
 #content nav form .form-input {
 	display: flex;
 	align-items: center;
-	height: 36px;
+	height: 0;
 }
 #content nav form .form-input input {
 	flex-grow: 1;
@@ -263,14 +218,14 @@ body {
 	color: var(--dark);
 }
 #content nav form .form-input button {
-	width: 36px;
-	height: 100%;
+	width:0;
+	/* height: 100%; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: var(--blue);
-	color: var(--light);
-	font-size: 18px;
+	/* background: var(--blue);
+	color: var(--light); */
+	font-size:0;
 	border: none;
 	outline: none;
 	border-radius: 0 36px 36px 0;

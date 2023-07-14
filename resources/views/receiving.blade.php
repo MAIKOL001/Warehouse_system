@@ -36,7 +36,7 @@
                left:1rem;
                bottom:1rem;
                color:#10405b">
-        <i class="fa-solid fa-pen-to-square"></i>Receiving
+        <i class="fa-solid fa-pen-to-square"></i>Receiving Form
     </H1>
 
  <form class="form_container" style=" padding-bottom:1rem;">
@@ -124,12 +124,12 @@
 <table class="table table-striped" id="myTable" cellpadding="10" cellspacing="20" style=" border-collapse: collapse; width: 100%;">
  <thead>
             <tr>
-                <th style=" color:#10405b; ">Movement No</th>
-                <th style=" color:#10405b; ">Movement Type</th>
-                <th style=" color:#10405b; ">From</th>
-                <th style=" color:#10405b; ">To</th>
-                <th style=" color:#10405b; ">Quantity</th>
-                <th style=" color:#10405b; ">Date</th>
+                <th style=" color:#10405b; ">SKU Code</th>
+                <th style=" color:#10405b; ">Product Name</th>
+                <th style=" color:#10405b; ">Total Quantity</th>
+                <th style=" color:#10405b; ">Quantity Passed</th>
+                <th style=" color:#10405b; ">Quantity Failed</th>
+                <th style=" color:#10405b; ">Options</th>
             </tr>
             </thead>
 

@@ -45,12 +45,13 @@
 						<h3></h3>
 
 					</div>
+                    @include('layouts.recalltable')
 					<table class="table table-striped " id="myTable" style="font-size:1rem; font-family:Mulish, sans-serif;">
                 <thead>
             <tr>
-                <th style=" color:#1d1d27; ">Recall ID</th>
-                <th style=" color:#1d1d27; ">Merchant</th>
-                <th style=" color:#1d1d27; ">Product</th>
+                <th style=" color:#1d1d27; ">Recall no</th>
+                <th style=" color:#1d1d27; ">Merchant Name</th>
+                <th style=" color:#1d1d27; ">Product type</th>
                 <th style=" color:#1d1d27; ">Quantity</th>
                 <th style=" color:#1d1d27; ">Date</th>
                 <th style=" color:#1d1d27; ">Status</th>
@@ -116,5 +117,5 @@
 
 </body>
 @include('layouts.frontendjs')
-@include('layouts.listjs')
+
 </html>

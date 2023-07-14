@@ -84,6 +84,7 @@
 						<h3 ></h3>
 
 					</div>
+                    @include('layouts.producttable')
 					<table class="table table-striped " id="mytable" style="font-size:1rem; font-family:Mulish, sans-serif;">
                 <thead>
                     <th>SKU</th>
@@ -195,6 +196,6 @@
 
 </body>
 @include('layouts.frontendjs')
-@include('layouts.listjs')
+
 </html>
 

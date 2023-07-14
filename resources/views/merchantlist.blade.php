@@ -58,84 +58,67 @@
 						<h3></h3>
 					</div>
 
-                    @include('layouts.table')
-					{{-- <table class="table table-striped " id="mytable" style="font-size:1rem; font-family:Mulish, sans-serif;"> --}}
-                {{-- <thead>
+                    @include('layouts.merchanttable')
+					<table class="table table-striped " id="mytable" style="font-size:1rem; font-family:Mulish, sans-serif;">
+                 <thead>
             <tr>
-                <th style="width:10%; color:#1d1d27; ">SKU</th>
-                <th style="width:20%; color:#1d1d27; ">Name</th>
-                <th style="width:10%; color:#1d1d27; ">Address</th>
-                <th style="width:20%; color:#1d1d27; ">Phone number</th>
-                <th style="width:20%; color:#1d1d27; ">Email</th>
-                <th style="width:10%; color:#1d1d27; ">Details</th>
+                <th style=" color:#1d1d27; ">Merchant Id</th>
+                <th style=" color:#1d1d27; "> Merchant Name</th>
+                <th style=" color:#1d1d27; ">Address</th>
+                <th style=" color:#1d1d27; ">Phone number</th>
+                <th style=" color:#1d1d27; ">Email</th>
+                <th style="color:#1d1d27; ">Total SKUs</th>
+                <th style=" color:#1d1d27; ">Merchant sign up date</th>
             </tr>
             </thead>
             <tbody>
-                  <td>ABC</td>
-    <td>John Smith</td>
-    <td>123 Main St</td>
-    <td>(555) 555-1234</td>
-    <td>john.smith@example.com</td>
-    <td><a href="#">View details</a></td>
-  </tr>
-  <tr>
-    <td>DEF</td>
-    <td>Jane Doe</td>
-    <td>456 Oak Ave</td>
-    <td>(555) 555-5678</td>
-    <td>jane.doe@example.com</td>
-    <td><a href="#">View details</a></td>
-  </tr>
-  <tr>
-    <td>GHI</td>
-    <td>Bob Johnson</td>
-    <td>789 Elm St</td>
-    <td>(555) 555-9012</td>
-    <td>bob.johnson@example.com</td>
-    <td><a href="#">View details</a></td>
-  </tr>
-  <tr>
-    <td>JKL</td>
-    <td>Susan Lee</td>
-    <td>321 Maple Ave</td>
-    <td>(555) 555-3456</td>
-    <td>susan.lee@example.com</td>
-    <td><a href="#">View details</a></td>
-  </tr>
-  <tr>
-    <td>MNO</td>
-    <td>David Chen</td>
-    <td>654 Birch Rd</td>
-    <td>(555) 555-7890</td>
-    <td>david.chen@example.com</td>
-    <td><a href="#">View details</a></td>
-  </tr>
-  <tr>
-    <td>PQR</td>
-    <td>Alice Kim</td>
-    <td>987 Cedar St</td>
-    <td>(555) 555-2345</td>
-    <td>alice.kim@example.com</td>
-    <td><a href="#">View details</a></td>
-  </tr>
-  <tr>
-    <td>STU</td>
-    <td>Michael Brown</td>
-    <td>246 Pine Rd</td>
-    <td>(555) 555-6789</td>
-    <td>michael.brown@example.com</td>
-    <td><a href="#">View details</a></td>
-  </tr>
-  <tr>
-    <td>VWX</td>
-    <td>Emily Davis</td>
-    <td>369 Oak St</td>
-    <td>(555) 555-0123</td>
-    <td>emily.davis@example.com</td>
-    <td><a href="#">View details</a></td>
-  </tr>
+                  <tr>
+      <td>123</td>
+      <td>Merchant A</td>
+      <td>123 Main St, City A</td>
+      <td>555-1234</td>
+      <td>merchantA@example.com</td>
+      <td>100</td>
+      <td>2022-05-15</td>
+    </tr>
+    <tr>
+      <td>456</td>
+      <td>Merchant B</td>
+      <td>456 Elm St, City B</td>
+      <td>555-5678</td>
+      <td>merchantB@example.com</td>
+      <td>200</td>
+      <td>2022-06-20</td>
+    </tr>
+    <tr>
+      <td>789</td>
+      <td>Merchant C</td>
+      <td>789 Oak St, City C</td>
+      <td>555-9012</td>
+      <td>merchantC@example.com</td>
+      <td>150</td>
+      <td>2022-07-10</td>
+    </tr>
+    <tr>
+      <td>1011</td>
+      <td>Merchant D</td>
+      <td>1011 Pine St, City D</td>
+      <td>555-3456</td>
+      <td>merchantD@example.com</td>
+      <td>75</td>
+      <td>2022-08-05</td>
+    </tr>
+    <tr>
+      <td>1213</td>
+      <td>Merchant E</td>
+      <td>1213 Maple St, City E</td>
+      <td>555-7890</td>
+      <td>merchantE@example.com</td>
+      <td>250</td>
+      <td>2022-09-25</td>
+    </tr>
             </tbody>
-            </table> --}}
+            </table>
 				</div>
         </main>
     </section>

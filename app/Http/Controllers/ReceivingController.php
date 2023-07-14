@@ -12,4 +12,11 @@ class ReceivingController extends Controller
         return view('receiving');
     }
 
+
+     public function list()
+    {
+        return view('stocklist');
+    }
+
+
 }

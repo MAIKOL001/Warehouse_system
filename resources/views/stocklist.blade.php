@@ -36,7 +36,7 @@
         <main>
              <div class="head-title">
 				<div class="left">
-					<h1>Orders</h1>
+					<h1>Stock List</h1>
 					{{-- <ul class="breadcrumb">
 						<li>
 							<a href="#" style="font-size:1.5rem; color:#be1204;">O r d e r s</a>
@@ -80,63 +80,70 @@
 
 			<div class="table-data">
 				<div class="order">
-@include('layouts.ordertable')
+@include('layouts.stocktable')
 					<table class="table table-striped " id="mytable" style="font-size:1rem; font-family:Mulish, sans-serif;">
-                <thead>
+
+
+  <thead>
     <tr>
-      <th>Order No.</th>
-      <th>Order Date</th>
-      <th>Merchant Name</th>
-      <th>Client Name</th>
-      <th>Client PhoneNo.</th>
-      <th>Client Location</th>
-      <th> Order Status</th>
-      <th>Details</th>
+      <th style="color:#1d1d27;">Order number</th>
+      <th style="color:#1d1d27;">Merchant name</th>
+      <th style="color:#1d1d27;">Receiving date</th>
+      <th style="color:#1d1d27;">Total quantities received</th>
+      <th style="color:#1d1d27;">Total Quantity Passed QC</th>
+      <th style="color:#1d1d27;">Total Quantity Fail QC</th>
+      <th style="color:#1d1d27;">Total SKUs Received</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>12345</td>
-      <td>05-04-2023</td>
-      <td>ABC Store</td>
-      <td>John Doe</td>
       <td>123456</td>
-      <td>123 Main St.</td>
-      <td>Processing</td>
-      <td class="details-control"><i class="fa-solid fa-eye"></i></td>
+      <td>Merchant A</td>
+      <td>2023-05-10</td>
+      <td>100</td>
+      <td>90</td>
+      <td>10</td>
+      <td>50</td>
     </tr>
     <tr>
-      <td>67890</td>
-      <td>05-04-2023</td>
-      <td>XYZ Store</td>
-      <td>Jane Smith</td>
       <td>789012</td>
-      <td>456 Maple Ave.</td>
-      <td>Dispatched</td>
-     <td class="details-control"><i class="fa-solid fa-eye"></i></td>
+      <td>Merchant B</td>
+      <td>2023-05-12</td>
+      <td>200</td>
+      <td>180</td>
+      <td>20</td>
+      <td>100</td>
     </tr>
     <tr>
-      <td>24680</td>
-      <td>05-04-2023</td>
-      <td>123 Store</td>
-      <td>Bob Johnson</td>
       <td>345678</td>
-      <td>789 Oak St.</td>
-      <td>Delivered</td>
-     <td class="details-control"><i class="fa-solid fa-eye"></i></td>
+      <td>Merchant C</td>
+      <td>2023-05-15</td>
+      <td>150</td>
+      <td>140</td>
+      <td>10</td>
+      <td>75</td>
     </tr>
     <tr>
-      <td>13579</td>
-      <td>05-04-2023</td>
-      <td>XYZ Store</td>
-      <td>Sally Williams</td>
       <td>901234</td>
-      <td>789 Elm St.</td>
-      <td>Cancelled</td>
-     <td class="details-control"><i class="fa-solid fa-eye"></i></td>
+      <td>Merchant D</td>
+      <td>2023-05-18</td>
+      <td>75</td>
+      <td>70</td>
+      <td>5</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>567890</td>
+      <td>Merchant E</td>
+      <td>2023-05-20</td>
+      <td>250</td>
+      <td>230</td>
+      <td>20</td>
+      <td>120</td>
     </tr>
   </tbody>
-            </table>
+</table>
+
 				</div>
         </main>
     </section>

@@ -45,6 +45,7 @@
 						<h3></h3>
 
 					</div>
+                    @include('layouts.movementtable')
 					<table class="table table-striped " id="myTable" style="font-size:1rem; font-family:Mulish, sans-serif;">
                 <thead>
             <tr>
@@ -53,6 +54,7 @@
                 <th style=" color:#1d1d27; ">From</th>
                 <th style=" color:#1d1d27; ">To</th>
                 <th style=" color:#1d1d27; ">Quantity</th>
+                <th style=" color:#1d1d27; ">Status</th>
                 <th style=" color:#1d1d27; ">Date</th>
             </tr>
             </thead>
@@ -63,6 +65,7 @@
     <td>A1-03-003</td>
     <td>A6-02-001</td>
     <td>100</td>
+    <td>Recalled</td>
     <td>2023-05-01</td>
   </tr>
   <tr>
@@ -71,6 +74,7 @@
     <td>A11-03-003</td>
     <td>A9-04-036</td>
     <td>100</td>
+    <td>Recalled</td>
     <td>2023-05-01</td>
   </tr>
   <tr>
@@ -79,6 +83,7 @@
     <td>Merchant B</td>
     <td>Merchant C</td>
     <td>75</td>
+    <td>Pending</td>
     <td>2023-05-05</td>
   </tr>
   <tr>
@@ -87,6 +92,7 @@
     <td>Warehouse C</td>
     <td>Warehouse Y</td>
     <td>120</td>
+    <td>Recalled</td>
     <td>2023-05-08</td>
   </tr>
   <tr>
@@ -95,6 +101,7 @@
     <td>Warehouse Z</td>
     <td>Warehouse A</td>
     <td>90</td>
+    <td>Recalled</td>
     <td>2023-05-10</td>
   </tr>
   <tr>
@@ -103,6 +110,7 @@
     <td>Merchant x</td>
     <td>Merchant B</td>
     <td>60</td>
+    <td>Recalled</td>
     <td>2023-05-12</td>
   </tr>
 </tbody>
@@ -114,5 +122,5 @@
 
 </body>
 @include('layouts.frontendjs')
-@include('layouts.listjs')
+
 </html>

@@ -1,7 +1,7 @@
 	<section id="sidebar">
 		<a href="('home')" class="brand">
 			<i class='bx bx-store-alt' style="font-size:2rem;"></i>
-			<span class="text">Warehouse inc.</span>
+			<span class="text">Wause inc.</span>
 		</a>
 		<ul class="side-menu top">
 			 <li>
@@ -32,12 +32,12 @@
       </a>
       <ul class="dropdown-menu">
         <li><a href="receiving">New Stock</a></li>
-        <li><a href="orderlist">Orders Received</a></li>
+        <li><a href="stocklist">Stock List</a></li>
       </ul>
     </li>
 
     <li>
-				<a href="orderprocessing">
+				<a href="orderlist">
 					<i class='bx bx-loader' ></i>
 					<span class="text">Order Processing</span>
 				</a>
@@ -57,7 +57,6 @@
       </ul>
     </li>
 
-
     <li class="dropdown">
       <a href="#" class="dropdown-toggle">
         <i class='bx bx-revision'></i>
@@ -69,18 +68,8 @@
         <li><a href="recalllist">Recall List</a></li>
       </ul>
     </li>
-
-			{{-- <li>
-				<a href="merchantlist">
-					<i class='bx bx-group' ></i>
-					<span class="text">Merchants</span>
-				</a>
-			</li> --}}
-
-
-
-
 		</ul>
+
 		<ul class="side-menu" style="postion:relative; margin-top:5.2rem;">
 			<li>
 				<a href="#">
@@ -90,7 +79,7 @@
 			</li>
 
 
-			
+
 		</ul>
 	</section>
 

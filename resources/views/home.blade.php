@@ -14,7 +14,7 @@
 
 	<!-- My CSS -->
 	{{-- <link rel="stylesheet" href="style.css"> --}}
-     @include('layouts.frontendcss')
+     @include('layouts.homecss')
 	<title>AdminHub</title>
 
  <style>

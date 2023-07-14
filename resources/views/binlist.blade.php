@@ -84,26 +84,40 @@
 						<h3></h3>
 
 					</div>
+                    @include('layouts.bintable')
 					<table class="table table-striped " id="myTable" style="font-size:1rem; font-family:Mulish, sans-serif;">
                 <thead>
-                                                <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">Product</th>
-                                                    <th scope="col">Category</th>
-                                                    <th scope="col">Merchant</th>
+            <tr>
+                <th style=" color:#1d1d27; ">Bin code</th>
+                <th style=" color:#1d1d27; ">Item code</th>
+                <th style=" color:#1d1d27; ">Product Name</th>
+                <th style=" color:#1d1d27; ">Total Quantity</th>
+                <th style=" color:#1d1d27; ">Quantity passed</th>
+                <th style=" color:#1d1d27; ">Quantity Failed</th>
+                <th style=" color:#1d1d27; ">Mechant Name</th>
+            </tr>
+            </thead>
+            <tbody>
+                  <tr>
+      <td>BIN001</td>
+      <td>ITEM001</td>
+      <td>Product 1</td>
+      <td>10</td>
+      <td>8</td>
+      <td>2</td>
+      <td>Merchant A</td>
+    </tr>
+    <tr>
+      <td>BIN002</td>
+      <td>ITEM002</td>
+      <td>Product 2</td>
+      <td>15</td>
+      <td>12</td>
+      <td>3</td>
+      <td>Merchant B</td>
+    </tr>
+            </tbody>
 
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                @foreach ($stocks as $stock)
-                                                    <tr>
-                                                        <td>{{ $loop->iteration }}</td>
-                                                        <td>{{ $stock['name'] }}</td>
-                                                        <td>{{ $stock['category'] }}</td>
-                                                        <td>{{ $stock->merchant->name }}</td>
-                                                    </tr>
-                                                @endforeach
-                                                </tbody>
             </table>
 				</div>
         </main>
@@ -111,5 +125,5 @@
 
 </body>
 @include('layouts.frontendjs')
-@include('layouts.listjs')
+
 </html>
